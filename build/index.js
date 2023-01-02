@@ -7,7 +7,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 var port = 5000;
 var app = (0, _express["default"])();
 app.use(_bodyParser["default"].json());
-app.use('/static', _express["default"]["static"]('public'));
 app.get('/', function (req, res) {
   res.sendFile(_path["default"].join(__dirname, '/index.html'));
 });
